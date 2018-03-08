@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0A4DC0302051C6520033CA0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DC02F2051C6520033CA0A /* AppDelegate.swift */; };
-		0A4DC0322051C6520033CA0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DC0312051C6520033CA0A /* ViewController.swift */; };
+		0A4DC0322051C6520033CA0A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DC0312051C6520033CA0A /* LoginController.swift */; };
 		0A4DC0352051C6520033CA0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4DC0332051C6520033CA0A /* Main.storyboard */; };
 		0A4DC0372051C6520033CA0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4DC0362051C6520033CA0A /* Assets.xcassets */; };
 		0A4DC03A2051C6520033CA0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4DC0382051C6520033CA0A /* LaunchScreen.storyboard */; };
+		0A4DC0452051C6C20033CA0A /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DC0422051C6C10033CA0A /* SpotifyMetadata.framework */; };
+		0A4DC0462051C6C30033CA0A /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DC0432051C6C20033CA0A /* SpotifyAudioPlayback.framework */; };
+		0A4DC0472051C6C30033CA0A /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4DC0442051C6C20033CA0A /* SpotifyAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A4DC02C2051C6520033CA0A /* SpotifySDK5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifySDK5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4DC02F2051C6520033CA0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A4DC0312051C6520033CA0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A4DC0312051C6520033CA0A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		0A4DC0342051C6520033CA0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A4DC0362051C6520033CA0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A4DC0392051C6520033CA0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4DC03B2051C6520033CA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4DC0422051C6C10033CA0A /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		0A4DC0432051C6C20033CA0A /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		0A4DC0442051C6C20033CA0A /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		0A4DC0542051CA220033CA0A /* SpotifySDK5-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotifySDK5-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4DC0452051C6C20033CA0A /* SpotifyMetadata.framework in Frameworks */,
+				0A4DC0472051C6C30033CA0A /* SpotifyAuthentication.framework in Frameworks */,
+				0A4DC0462051C6C30033CA0A /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +48,7 @@
 		0A4DC0232051C6520033CA0A = {
 			isa = PBXGroup;
 			children = (
+				0A4DC0412051C6A10033CA0A /* Frameworks */,
 				0A4DC02E2051C6520033CA0A /* SpotifySDK5 */,
 				0A4DC02D2051C6520033CA0A /* Products */,
 			);
@@ -54,14 +65,25 @@
 		0A4DC02E2051C6520033CA0A /* SpotifySDK5 */ = {
 			isa = PBXGroup;
 			children = (
+				0A4DC0542051CA220033CA0A /* SpotifySDK5-Bridging-Header.h */,
 				0A4DC02F2051C6520033CA0A /* AppDelegate.swift */,
-				0A4DC0312051C6520033CA0A /* ViewController.swift */,
+				0A4DC0312051C6520033CA0A /* LoginController.swift */,
 				0A4DC0332051C6520033CA0A /* Main.storyboard */,
 				0A4DC0362051C6520033CA0A /* Assets.xcassets */,
 				0A4DC0382051C6520033CA0A /* LaunchScreen.storyboard */,
 				0A4DC03B2051C6520033CA0A /* Info.plist */,
 			);
 			path = SpotifySDK5;
+			sourceTree = "<group>";
+		};
+		0A4DC0412051C6A10033CA0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A4DC0432051C6C20033CA0A /* SpotifyAudioPlayback.framework */,
+				0A4DC0442051C6C20033CA0A /* SpotifyAuthentication.framework */,
+				0A4DC0422051C6C10033CA0A /* SpotifyMetadata.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +118,7 @@
 				TargetAttributes = {
 					0A4DC02B2051C6520033CA0A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4DC0322051C6520033CA0A /* ViewController.swift in Sources */,
+				0A4DC0322051C6520033CA0A /* LoginController.swift in Sources */,
 				0A4DC0302051C6520033CA0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,12 +297,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJCGPLSA62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SpotifySDK5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonpark.SpotifySDK5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpotifySDK5/SpotifySDK5-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +319,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJCGPLSA62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SpotifySDK5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonpark.SpotifySDK5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpotifySDK5/SpotifySDK5-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
